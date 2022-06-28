@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Stackana.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="640" Height="480">
+    <Grid x:Name="LayoutRoot" Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="20"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border x:Name="headerBorder" Grid.Row="0" Background="Black">
+            <TextBlock x:Name="headerLabel" Grid.Row="0" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" Foreground="Azure" Text="Stackana"></TextBlock>
+        </Border>
+        <Canvas x:Name="gameSurface" Grid.Row="1"></Canvas>
+        <Border x:Name="footerBorder" Grid.Row="2" Background="Black">
+            <TextBlock x:Name="footerLabel" Grid.Row="2" HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" Foreground="Azure" Text="Get Yours from Xleeque.com"></TextBlock>
+        </Border>
+    </Grid>
+</UserControl>
